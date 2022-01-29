@@ -1,0 +1,227 @@
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        /* background-image: url("https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"); */
+        background-repeat: repeat-x;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+    
+    nav {
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        height: 65px;
+        /* background-color: black; */
+        color: white;
+    }
+    
+    nav ul li {
+        padding: 0 12px;
+    }
+    
+    .brand img {
+        width: 44px;
+        padding: 0 8px;
+    }
+    
+    .brand {
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 1.3rem;
+    }
+    
+    .container {
+        min-height: 75vh;
+        color: white;
+        display: flex;
+        background-image: url("https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+        margin: 23px auto;
+        width: 70%;
+        padding: 20px;
+        font-family: 'Varela', sans-serif;
+    }
+    
+    .songItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 23px 0;
+    }
+    
+    .songItem img {
+        width: 43px;
+    }
+    
+    .list li {
+        list-style: none;
+    }
+    
+    .bottom {
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        height: 110px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #musicBar {
+        width: 30vw;
+        position: relative;
+        top: 20px;
+        left: 50px;
+        cursor: pointer;
+    }
+    
+    .icons {
+        position: relative;
+        top: 20px;
+        right: 220px;
+        cursor: pointer;
+    }
+    
+    .songImg {
+        position: absolute;
+        left: 9vw;
+        top: 10px;
+    }
+    
+    #songInfo {
+        position: absolute;
+        left: 16vw;
+        top: 35px;
+        font-size: larger;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .artist {
+        position: absolute;
+        left: 16vw;
+        top: 60px;
+        font-size: small;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    /* .likeIcon {
+        margin-left: 10px;
+        margin-top: 10px;
+    } */
+    
+    .songItemPlay {
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width: 1300px) and (min-width: 1000px) {
+        #musicBar {
+            left: 70px;
+        }
+        .icons {
+            right: 180px;
+        }
+        #songInfo {
+            left: 20vw;
+        }
+        .artist {
+            left: 20vw;
+        }
+    }
+    
+    @media screen and (max-width: 1000px) and (min-width: 800px) {
+        #musicBar {
+            left: 100px;
+        }
+        .icons {
+            right: 100px;
+        }
+        #songInfo {
+            left: 22vw;
+        }
+        .artist {
+            left: 22vw;
+        }
+    }
+    
+    @media screen and (max-width: 800px) and (min-width: 600px) {
+        #musicBar {
+            left: 140px;
+        }
+        .icons {
+            right: 20px;
+        }
+        #songInfo {
+            left: 26vw;
+        }
+        .artist {
+            left: 26vw;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        #musicBar {
+            left: 160px;
+            width: 40vw;
+        }
+        .icons {
+            right: -20px;
+        }
+        #songInfo {
+            left: 28vw;
+        }
+        .artist {
+            left: 28vw;
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        #musicBar {
+            left: 120px;
+            width: 60vw;
+        }
+        .icons {
+            right: 50px;
+            top: 25px;
+        }
+        .songImg {
+            display: none;
+        }
+        #songInfo {
+            left: 10vw;
+        }
+        .artist {
+            left: 10vw;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        #musicBar {
+            left: 120px;
+            width: 50vw;
+        }
+        .icons {
+            right: 10px;
+            top: 25px;
+        }
+        .songImg {
+            display: none;
+        }
+        #songInfo {
+            left: 10vw;
+        }
+        .artist {
+            left: 10vw;
+        }
+    }
